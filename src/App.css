@@ -1,0 +1,61 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #cacaca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background-color: #ffffff;
+  width: 320px; /* Tamanho fixo para a calculadora */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between; /* Alinha os botões igualmente */
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 50px; /* Altura menor */
+  background-color: #AAAAFF;
+  border: none;
+  border-radius: 4px;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+  padding: 15px;
+  text-align: right;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.botao {
+  width: 70px; /* Largura fixa para os botões */
+  height: 70px; /* Altura fixa */
+  border: 1px solid #CDCDCD;
+  background-color: #00AAF0;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s;
+  flex: 1; /* Faz os botões ocuparem o espaço disponível */
+  margin: 0 5px; /* Adiciona espaçamento entre os botões */
+}
+
+.botao:last-child {
+  margin-right: 0; /* Remove margem do último botão */
+}
+
+.botao:hover {
+  background-color: #0091C0;
+  opacity: 0.9;
+}
